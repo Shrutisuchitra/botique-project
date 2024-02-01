@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      
+      .gradient {
+      
+      background: linear-gradient(135deg,#accbee 0%,#e7f0fd 100%);
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+      color:
+      }
+
+      .gradient-background {
+      
+      background: linear-gradient(135deg,#e6e9f0 0%,#eef1f5 100%);
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+      color:
+      }
+
+
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+      
+   
+
+    
+    .addres {
+    text-align: center; 
+   
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+  }
+
+  #padding {
+    padding: 50px;
+  }
+
+  
+
+  //carousel//
+
+  *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+@keyframes fade{
+  from{
+    opacity:0.4;
+  }
+  to{
+    opacity:1;
+  }
+}
+//imgs
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+    
+    </style>
+</head>
+<body class="gradient gradient-animation">
+    <!--Navbar-->
+  
+    <div style="justify-content: center; ">
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index2.html" style="align-items: center;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html" style="align-items: center;">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./shop collection.html" style="align-items: center;">Shop Collection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Sarees.html" style="align-items: center;">Sarees</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <marquee scrollamount="15" style="font-size: 30px;">
+      COD AVAILABLE | FREE DOMESTIC SHIPPING | WORLDWIDE SHIPPING AVAILABLE
+  </marquee>
+
+<!--heroes-->
+<div class="container">
+<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="./images/botique.avif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500px" style="border-radius: 15px;">
+    </div>
+    <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Catch Your Own </h1>
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Stylish & Look</h1>
+        <br/>
+        <h2 class="lead">The fashion industry is one of the most competitive and lucrative industries.</h2>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--imgs-->
+<div class="container">
+  <h1 style="text-align: center; font-family: cursive;">Womens Wear</h1>
+<div class="row">
+  <div class="column">
+    <img src="./images/kurti.jpeg" alt="Snow" style="width:80%" height="500px">
+    <p id="demo"></p>
+    <button class="button" onclick="one();" style="font-size: 25px;">Kurtis</button> 
+  </div>
+  <div class="column">
+    <img src="./images/top.webp" alt="Forest" style="width:80%" height="500px">
+    <p id="demo1"></p>
+    <button class="button" onclick="two();" style="font-size: 25px;">Tops</button> 
+  </div>
+  <div class="column">
+    <img src="./images/jeans.webp" alt="Mountains" style="width:80%" height="500px">
+    <p id="demo2"></p>
+    <button class="button" onclick="three();" style="font-size: 25px;">Jeans</button>  
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="./images/dress.jpg" alt="Snow" style="width:80%" height="500px">
+    <p id="demo3"></p>
+    <button class="button" onclick="four();" style="font-size: 25px;">Dresses</button>  
+  </div>
+  <div class="column">
+    <img src="./images/saree.jpg" alt="Forest" style="width:80%" height="500px">
+    <p id="demo4"></p>
+    <button class="button" onclick="five();" style="font-size: 25px;">Sarees</button> 
+  </div>
+  <div class="column">
+    <img src="./images/gown.jpg" alt="Mountains" style="width:80%" height="500px">
+    <p id="demo5"></p>
+   <button class="button" onclick="six();" style="font-size: 25px;">Gowns</button> 
+  </div>
+</div>
+</div> 
+
+  <!--carousel-->
+  <span id="heading"></span>
+  <div id="slider">  
+  <div class="slides">  
+    <img src="./images/carousel-1.jpg" width="100%" height="800px">
+   </div>
+    <div class="slides">  
+    <img src="./images/carousel-2.jpg" width="100%" height="800px">
+  </div>
+    <div class="slides">  
+    <img src="./images/carousel-3.jpg" width="100%" height="800px">
+  </div> 
+    
+    <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span></div>
+  </div>
+</div>
+
+<!-- testimonial -->
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">             
+        </div>
+        <div class="card-body" style="background-color: rgb(188, 188, 219);">
+            <img src="./images/image1.jpg" alt="image" style="height: 160px; width: 160px; border-radius: 400%;">            
+            <h2>
+              Extraordinary Service
+            </h2>
+            <p>
+                At first i was very skeptical to buy, then with all incredible reviews i ordered and got with supersize as they guaranteed. Even i got the dress bit late but they responded my messages and inquiries without any delay. Highly appreciate that, Thanks a lot for the overall extraordinary service.
+            </p>    
+        </div>
+        </div> 
+    </div>
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">              
+        </div>
+        <div class="card-body" style="background-color: rgb(188, 188, 219);">
+            <img src="./images/image2.jpg" alt="image" style="height: 160px; width: 160px; border-radius: 400%;">              
+            <h2>
+              Very Unique Products
+            </h2>
+                <p>
+                  The products offered on this website are very unique. I Love my outfit!! The stitching is so perfect and worth the price. Perfect place to purchase Ethnic clothes.Thank you so much team for such a wonderful lehenga. Highly appreciate that, Thanks a lot for the overall extraordinary service.
+              </p>              
+        </div>
+        </div>          
+    </div>
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">    
+        </div>
+        <div class="card-body" style="background-color: rgb(188, 188, 219);">
+            <img src="./images/image3.jpg" alt="image" style="height: 160px; width: 160px; border-radius: 350%; ;"> 
+            <h2>
+              Amazing Customer Service
+            </h2>
+                <p>
+                  Amazing customer service. Great quality product, I got more than what I expected. Delivery of the Sarees to me was really fast. Truly impressed, keep it up, youre simply the best and definitely looking forward to more shoppings from you.Thanks a lot for the overall extraordinary service.
+              </p>           
+        </div>
+        </div>        
+    </div>
+    </div>
+    </div>
+</table>
+    </div>
+  </div>
+
+<div class="addres">
+    <h1>Address</h1>
+    <h2>
+      Asian Mall, Darga Road, Kalaburagi, Karnataka 585102<br>Open everyday 11am – 11pm
+    </h2>
+  <a href="https://www.google.com/maps/place/Big+Bazaar/@17.3337703,76.8365768,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc8c74e33b6fbdd:0x11eb4fd39aea5519!8m2!3d17.3337703!4d76.8391517!16s%2Fg%2F1hc87kfpf?entry=ttu" style="font-size: 30px;">Address</a>
+</div>
+
+
+  <!--Footer-->
+    <footer class="py-5" id="padding" >
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">  
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary" >Home</a></li>
+            <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="./shop collection.html" class="nav-link p-0 text-body-secondary">Shop Collection</a></li>   
+            <li class="nav-item mb-2"><a href="./Sarees.html" class="nav-link p-0 text-body-secondary">Sarees</a></li>        
+          </ul>
+        </div> 
+        <div class="col-6 col-md-2 mb-3" >
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="./shop collection.html" class="nav-link p-0 text-body-secondary">Shop Collection</a></li>
+            <li class="nav-item mb-2"><a href="./Sarees.html" class="nav-link p-0 text-body-secondary">Sarees</a></li>             
+          </ul>
+        </div>  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div> 
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p style="text-align: center;">© 2023 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+<script>
+
+var index = 0;
+        var slides = document.querySelectorAll(".slides");
+        var dot = document.querySelectorAll(".dot");
+      
+        function changeSlide(){
+      
+          if(index<0){
+            index = slides.length-1;
+          }
+          
+          if(index>slides.length-1){
+            index = 0;
+          }
+          
+          for(let i=0;i<slides.length;i++){
+            slides[i].style.display = "none";
+            dot[i].classList.remove("active");
+          }
+          
+          slides[index].style.display= "block";
+          dot[index].classList.add("active");
+          
+          index++;
+          
+          setTimeout(changeSlide,2000);
+          
+        }
+      
+        changeSlide();
+
+    //imgs//
+    function one() {
+    const cars = ["Trendy sensational Kurtis"];
+    document.getElementById("demo").innerHTML = cars;
+    }
+    function two() {
+    const cars = ["Pretty Designer woman Tops"];
+    document.getElementById("demo1").innerHTML = cars;
+    }
+    function three() {
+    const cars = ["Comfy Retro Woman Jeans"];
+    document.getElementById("demo2").innerHTML = cars;
+    }
+    function four() {
+    const cars = ["Trendy party Wear Woman Dresses"];
+    document.getElementById("demo3").innerHTML = cars;
+    }
+    function five() {
+    const cars = ["Charvi drishya, Banita graceful, Chitrarekha attractive sarees"];
+    document.getElementById("demo4").innerHTML = cars;
+    }
+    function six() {
+    const cars = ["Trendy elegant woman Gowns"];
+    document.getElementById("demo5").innerHTML = cars;
+    }
+    
+</script>
+</body>
+</html>

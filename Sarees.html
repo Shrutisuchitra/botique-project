@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .gradient {
+      
+      background: linear-gradient(135deg,#d0ddeb 0%,#e7f0fd 100%);
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+      color:
+      }
+
+        
+      * {
+    box-sizing: border-box;
+    }
+    .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    }
+    /* Clearfix (clear floats) */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    </style>
+</head>
+<body class="gradient">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+              <p style="font-size: 20px;  padding-left: 15px; font-size: 30px;" >Banarasi Cotton Silk</p>
+              <img src="./images/saree1.webp" alt="Snow" style="width:80%" height="500px" >
+              <p id="demo"></p>
+              <button class="button" onclick="one();">Read More</button>
+            </div>
+            <div class="column">
+              <p style="font-size: 20px; padding-left: 9%; font-size: 30px;">Kanjivaram Sarees</p>
+              <img src="./images/saree2.avif" alt="Forest" style="width:80%" height="500px">
+              <p id="demo1"></p>
+              <button class="button" onclick="two();">Read More</button>
+            </div>
+            <div class="column">
+              <p style="font-size: 20px; padding-left: 10%; font-size: 29px;">Kashvi fabulous Sarees</p>
+              <img src="./images/saree3.jpeg" alt="Mountains" style="width:70%" height="500px">
+              <p id="demo2"></p>
+              <button class="button" onclick="three();">Read More</button>
+            </div>
+          </div>
+        </div>
+        <script>
+            //images//
+    function one() {
+    const cars = ["<h2>product details</h2> <ul><li>Name: Banarasi Silk sarees</li> <li>Saree Fabric: Cotton</li> <li>Blouse: Saree with Multiple Blouse</li> <li>Blouse Fabric: cotton</li></ul>"];
+    document.getElementById("demo").innerHTML = cars;
+    }
+    function two() {
+    const cars = ["<h2>product details</h2> <ul><li>Name:kanjivaram silk saree</li> <li>Saree Fabric: Litchi Silk</li> <li>Blouse: Running Blouse</li> <li>Blouse Fabric: Litchi Silk</li></ul>"];
+    document.getElementById("demo1").innerHTML = cars;
+    }
+    function three() {
+    const cars = ["<h2>product details</h2> <ul><li>Name: Kashvi Fabulous Sarees</li> <li>Saree Fabric: Cottob Blind</li> <li>Blouse: Running Blouse</li> <li>Blouse Fabric: Cotton</li></ul>"];
+    document.getElementById("demo2").innerHTML = cars;
+    }
+    
+        </script>
+</body>
+</html>
